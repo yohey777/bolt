@@ -8,7 +8,9 @@ body{
 img{
   vertical-align: top;
 }
-
+a{
+  display:inline-block;
+}
 .content{
   width:1100px;
   margin:0 auto;
@@ -42,8 +44,7 @@ header{
 }
 
 
-.contact-box:hover  {
-  transition:0.3s;
+a.contact-box:hover  {
   color: black;
 }
 
@@ -148,12 +149,16 @@ ul{
   margin-top:80px;
   float:left;
   text-align: center ;
+}
+
+.image-list-box a{
   opacity:0.7;
   transition: 0.3s; 
 }
 
-
-
+.image-list-box a:hover  {
+  opacity:1.0;
+}
 
 .image-list-box li:nth-child(n + 4) {
   margin-bottom:0px;
@@ -170,10 +175,7 @@ ul{
   margin-top:0px;
 }
 
-.image-list-box li:hover  {
-  transition: 0.3s;
-  opacity:1.0;
-}
+
 
 .article-text-box{
   font-size: 0;
@@ -201,8 +203,7 @@ ul{
 }
 
 
-.article-email:hover {
-  transition:0.3s;
+a.article-email:hover {
   color:#333;
 }
 
@@ -262,11 +263,10 @@ ul{
   opacity:0.7;
   display: inline-block;
   background-color:#f2f2f2;
-  transition: 0.3s ;
+  transition: 0.3s 
 }
 
-.section-social-logo a:hover {
-	transition: 0.3s ;
+.section-social-logo a:hover {;
   opacity:1.0;
   background-color: white;
   cursor: pointer;
@@ -283,9 +283,8 @@ ul{
   padding-top:20px;
 }
 
-.footer-box p{
+.footer-box {
   color:white;
-  margin-right:250px;
   text-align: right;
 }
 
