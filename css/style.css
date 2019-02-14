@@ -1,8 +1,13 @@
 
-.wrapper{
-  min-height: 100vh;
+body{
+  background-color:#f2f2f2;
+  font-family:Lato;
+  color:#333;
 }
 
+img{
+  vertical-align: top;
+}
 
 .content{
   width:1100px;
@@ -11,36 +16,34 @@
 
 /* heaeder */
 header{
-  position:relative;
+  position:fixed;
   background-color: white;
   width:100%;
+  z-index: 100;
 }
 
-.fa-bolt{
+.bolt-image {
   font-size:50px;
   padding:15px 0px;
+  color: gray;
+  float: left;
 }
+
+
 .contact-box{
   color: white;
   background-color: #74cfae;
-  height: 23px;
-  width: 48px;
   padding: 14px 12px;
   font-size: 12px;
-  line-height: 19px;
-  text-align: center;
-  position: absolute;
-  right: 200px;
-  top: 15px;
+  line-height: 15px;
+  margin-top: 15px;
+  float:right;
 }
 
-.contact-box:hover {
-  trandition:0.3s;
+.contact-box a:hover {
+  transition:0.3s;
   color: black;
 }
-
-
-
 
 main {
   width:100%;
@@ -50,146 +53,167 @@ main {
   background-color: #f2f2f2
 }
 .bolt-theme{
-  padding:250px 0;
   text-align: center;
+  padding:250px 0;
 }
 
-#bolt-theme-font {
+.bolt-theme h1 {
   font-size:90px;
   font-weight: 700;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: #74cfae;
+  font-family:raleway;
 }
-
-#sub-theme-font{
+.bolt-theme p{
   font-size:30px;
   color:#c0c0c0;
-  /* display:inline-block; */
 }
 
-#iphone-img{
-  padding-left:80px;
-  padding-top:50px;
+.iphone-box{
+  display:inline-block;
 }
+
+
+.iphone-box img{
+  margin-left:80px;
+  box-sizing: border-box;
+}
+
 
 .green-section{
   background-color: #74cfae; 
   position:relative;
+  padding-top: 50px;
 }
 
 .second-section-paragraph{
-  position:absolute;
-  right:250px;
-  top:70px;
-  width:730px;
+  width:650px;
+  vertical-align: top;
+  margin-left: 100px;
+  display:inline-block;
 }
 
-.second-section-title{
+
+.second-section-paragraph > h2{
   color:white;
   font-size:24px;
-  padding-bottom:35px;
+  margin-bottom:35px;
   text-align: center;
+  font-family:Raleway;
 }
 
-.second-section-sentence{
+.second-section-paragraph p{
   color:white;
   font-size:20px;
   text-align: center;
   line-height: 25px;
 }
 
-ul{
-  margin:0 auto;
-  text-align: center;
-}
-
-li.image-list {
-  padding-left:100px;
-  padding-top:80px;
-  float:left;
-  text-align: center ;
-}
-
+/* OUR LATEST WORK */
 
 .image-article-title{
-  padding-top:60px;
   text-align: center;
+  margin-top: 60px;
 }
 
-.image-article-title-font{
-  font-size:24px;
-  padding-bottom:40px;
-  text-align: center;
+.image-article-title h2{
+  font-size:20px;
+  font-family:Raleway;
 }
 
 article {
   position:relative;
   background-color: #f2f2f2;
-
 }
 
 
-
-/* 画像６個のところ */
-
-li.image-list:nth-child(n + 4) {
-  padding-bottom:0px;
-}
-li.image-list:first-child {
-  padding-left:0px;
-}
-li.image-list:nth-child(4) {
-  padding-left:0px;
-}
-
-  
-.article-email{
-  background-color: #74cfae;
-  width: 140px;
-  display: inline-block;
-  color: white;
+ul{
+  margin:0 auto;
   text-align: center;
 }
-.article-text{
+
+
+
+.image-list-box{
+  margin-top:40px;
+  margin-bottom: 90px;
+}
+
+.image-list-box li{
+  margin-left:100px;
+  margin-top:80px;
   float:left;
-  width:600px;
-  padding-right:90px;
-  padding-left:150px;
-  font-size:16px;
+  text-align: center ;
+  opacity:0.7;
 }
 
-p.email-text{
-  font-size:12px;
+.image-list-box li:nth-child(n + 4) {
+  margin-bottom:0px;
+}
+
+.image-list-box li:first-child {
+  margin-left:0px;
+}
+
+.image-list-box li:nth-child(4) {
+  margin-left:0px;
+}
+.image-list-box li:nth-child(-n+3){
+  margin-top:0px;
+}
+
+.image-list-box li:hover {
+  transition: 0.3s;
+  opacity:1.0;
+}
+
+
+
+.article-email{
+  background-color: #74cfae;
+  display: inline-block;
+  color: white;
+  text-align: center;  font-size:12px;
   padding:14px 20px;
+
 }
 
-.article-email:hover{
+.article-text-box{
+  font-size: 0;
+  text-align: center;
+}
+.article-text-box > p{
+  display:inline-block;
+  width: 440px;
+  margin-right: 90px;
+  font-size:16px;
+  vertical-align: top;
+  text-align: center;
+}
+
+
+.article-email:hover a{
   transition:0.3s;
   color:#333;
 }
 
-.article-text-box{
-  /* background-color: pink; */
-  padding-bottom:70px;
-  margin:0 auto;
-  padding-top:90px;
-  /* width:1000px; */
-}
 
-/* 以下円の画像 */
-.circlecluster li{
-  margin:0 auto;
-  float:left;
-  /* text-align: center; */
-  padding-right:180px;
-}
+/* CIRCLE */
 
 .circlecluster{
+  width:100%;
+  margin-top: 50px;
+}
+
+
+.circlecluster li{
   margin:0 auto;
+  display:inline-block;
+  margin-right: 180px;
 }
 
 .circlecluster li:last-child{
-  padding-right:0px;
+  margin-right:0px;
 }
 
 .circlecluster p{
@@ -197,11 +221,14 @@ p.email-text{
   font-size:16px;
 }
 .circle-image{
-  padding-right:20px;
+  margin-right:20px;
 }
 
 .main-ourskills{
   background-color:#4e4e4e ;
+  margin-top: 70px;
+  padding-top: 70px;
+  padding-bottom: 100px;
 }
 
 .clearfix:after {
@@ -210,27 +237,13 @@ p.email-text{
   clear: both;
 }
 
-.ourskills-text{
+.ourskills h2{
   text-align: center;
   color:white;
 }
-.ourskills{
-  padding-top:70px;
-}
-
 
 .circle-image{
   margin:0 auto;
-}
-
-
-
-.circlecluster{
-  width:100%;
-  margin:0 auto;
-  padding-left: 34px;
-  padding-top:50px;
-  padding-bottom:100px;
 }
 
 /* 以下ソーシャルのロゴ */
@@ -239,19 +252,20 @@ p.email-text{
   background-color:#f2f2f2;
 }
 
-.social-logo > .fa{
-  font-size: 35px;
+.section-social-logo a{
+  font-size: 45px;
   color:#74cfae;
   width:185px;
   line-height: 100px;
-  /* background-color: white; */
   opacity:0.7;
+  display: inline-block;
 }
 
-.fa:hover{
+.section-social-logo a:hover {
 	transition: 0.3s ;
   opacity:1.0;
   background-color: white;
+  cursor: pointer;
 }
 
 .social-logo{
@@ -262,14 +276,13 @@ p.email-text{
 /* footerセクション */
 footer{
   background-color: #74cfae; 
+  padding-bottom:25px;  padding-top:20px;
 }
 
 .footer-box p{
   color:white;
-  padding-bottom:25px;
-  padding-top:20px;
-  padding-right:250px;
-  float:right;
+  margin-right:250px;
+  text-align: right;
 }
 
 .fa-heart{
