@@ -31,21 +31,25 @@ header{
 
 
 .contact-box{
-  color: white;
   background-color: #74cfae;
   padding: 14px 12px;
   font-size: 12px;
   line-height: 15px;
   float:right;
+  color: white;
+  text-decoration: none; 
+  transition:0.3s;
 }
 
-.contact-box a:hover {
+
+.contact-box:hover  {
   transition:0.3s;
   color: black;
 }
 
-main {
+.main-box {
   width:100%;
+  padding-top:82px;
 }
 
 .bolt-main-font{
@@ -112,7 +116,6 @@ main {
 
 .image-article-title{
   text-align: center;
-  margin-top: 60px;
 }
 
 .image-article-title h2{
@@ -120,9 +123,11 @@ main {
   font-family:Raleway;
 }
 
-article {
+.article-main {
   position:relative;
   background-color: #f2f2f2;
+  padding-top:60px;
+  padding-bottom:70px;
 }
 
 
@@ -144,7 +149,11 @@ ul{
   float:left;
   text-align: center ;
   opacity:0.7;
+  transition: 0.3s; 
 }
+
+
+
 
 .image-list-box li:nth-child(n + 4) {
   margin-bottom:0px;
@@ -161,12 +170,15 @@ ul{
   margin-top:0px;
 }
 
-.image-list-box li:hover {
+.image-list-box li:hover  {
   transition: 0.3s;
   opacity:1.0;
 }
 
-
+.article-text-box{
+  font-size: 0;
+  text-align: center;
+}
 
 .article-email{
   background-color: #74cfae;
@@ -174,13 +186,11 @@ ul{
   color: white;
   text-align: center;  font-size:12px;
   padding:14px 20px;
-
+  text-decoration: none; 
+  transition:0.3s;
 }
 
-.article-text-box{
-  font-size: 0;
-  text-align: center;
-}
+
 .article-text-box > p{
   display:inline-block;
   width: 440px;
@@ -191,7 +201,7 @@ ul{
 }
 
 
-.article-email:hover a{
+.article-email:hover {
   transition:0.3s;
   color:#333;
 }
@@ -219,13 +229,9 @@ ul{
   color:white;
   font-size:16px;
 }
-.circle-image{
-  margin-right:20px;
-}
 
 .main-ourskills{
   background-color:#4e4e4e ;
-  margin-top: 70px;
   padding-top: 70px;
   padding-bottom: 100px;
 }
@@ -241,14 +247,11 @@ ul{
   color:white;
 }
 
-.circle-image{
-  margin:0 auto;
-}
+
 
 /* 以下ソーシャルのロゴ */
-
 .section-social-logo{
-  background-color:#f2f2f2;
+  padding:200px 0;
 }
 
 .section-social-logo a{
@@ -258,6 +261,8 @@ ul{
   line-height: 100px;
   opacity:0.7;
   display: inline-block;
+  background-color:#f2f2f2;
+  transition: 0.3s ;
 }
 
 .section-social-logo a:hover {
@@ -268,14 +273,14 @@ ul{
 }
 
 .social-logo{
-  padding:200px 0px;
   text-align: center;
 }
 
 /* footerセクション */
-footer{
+.footer-main{
   background-color: #74cfae; 
-  padding-bottom:25px;  padding-top:20px;
+  padding-bottom:25px;  
+  padding-top:20px;
 }
 
 .footer-box p{
