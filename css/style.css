@@ -323,7 +323,7 @@ a.article-email:hover {
 
 /* ここからレスポンシブ */
 
-/* 480px〜767px：スマホ対応
+/* 〜767px：スマホ対応
 ------------------------------ */
 @media screen and (max-width:767px) {
 
@@ -465,7 +465,7 @@ a.article-email:hover {
   }
 
 }
-  /* 600px〜959px：タブレット
+  /* ：タブレット
   ------------------------------ */
   @media screen and (min-width:768px) and (max-width:1199px) {
   /* メインコンテンツ */
