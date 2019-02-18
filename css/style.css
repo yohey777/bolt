@@ -1,5 +1,6 @@
 
 
+
 /* 共通 */
 body{
   background-color:#f2f2f2;
@@ -55,6 +56,10 @@ a.contact-box:hover  {
   color: black;
 }
 
+.checkbox_hidden {
+  display: none;
+}
+
 /* ここまでheader */
 
 /* ここからmain */
@@ -67,11 +72,11 @@ a.contact-box:hover  {
 /* ここからbolt theme */
 
 .bolt-main-font{
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
+  padding: 250px 0;
 }
 .bolt-theme{
   text-align: center;
-  padding:250px 0;
 }
 
 .bolt-theme h1 {
@@ -219,6 +224,10 @@ ul{
   text-align: center;
 }
 
+.article_text_box_responsive{
+  display: none !important; 
+}
+
 
 a.article-email:hover {
   color:#333;
@@ -228,6 +237,16 @@ a.article-email:hover {
 
 /* ここからOUR SKILLS */
 
+.main-ourskills{
+  background-color:#4e4e4e ;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.ourskills h2{
+  text-align: center;
+  color:white;
+}
 .circlecluster{
   width:100%;
   margin-top: 50px;
@@ -249,18 +268,9 @@ a.article-email:hover {
   font-size:16px;
 }
 
-.main-ourskills{
-  background-color:#4e4e4e ;
-  padding-top: 70px;
-  padding-bottom: 100px;
-}
 
 
 
-.ourskills h2{
-  text-align: center;
-  color:white;
-}
 
 /* ここまでourskills */
 
@@ -309,5 +319,215 @@ a.article-email:hover {
   padding:0 5px;
 }
 
-
 /* ここまでfooterセクション */
+
+/* ここからレスポンシブ */
+
+/* 480px〜767px：スマホ対応
+------------------------------ */
+@media screen and (max-width:767px) {
+
+    /* SP_main */
+  .content{
+    width:97%;
+  }
+  .second-section-paragraph{
+    width: 400px;
+    margin-left: 0px; 
+  }
+
+  /* SP_header */
+
+
+  .contact-box{
+    display: none;
+  }
+
+  /* 以下ハンバーガーメニュー */
+  #nav-drawer {
+    position: relative;
+    float: right;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  /*チェックボックス等は非表示に*/
+  .nav-unshown {
+    display:none;
+  }
+  
+  /*アイコンのスペース*/
+  #nav-open {
+      display: inline-block;
+      width: 22px;
+      height: 19px;
+      vertical-align: middle;
+  }
+  
+  /*ハンバーガーアイコンをCSSだけで表現*/
+  #nav-open span, #nav-open span:before, #nav-open span:after {
+      position: absolute;
+      height: 2px;
+      width: 24px;
+      background: #ddd;
+      display: block;
+      content: '';
+      cursor: pointer;
+  }
+  
+  #nav-open span:before {
+    bottom: -7px;
+  }
+  #nav-open span:after {
+    bottom: -14px;
+  }
+
+  /* bolt-theme */
+
+  .bolt-main-font{
+    padding-top:160px;
+    padding-bottom:130px;
+  }
+
+  .bolt-theme h1 {
+    font-size:80px;
+  }
+  .br::before {
+    content: "\A" ;
+    white-space: pre ;
+  }
+
+  /* WAHT WE CAN DO */
+  .iphone-text{
+    text-align: center;
+    padding: 0 10px 20px;
+  }
+
+  .iphone-box img {
+    margin-left: 0px;
+}
+  .iphone-box {
+    margin-bottom: 20px;
+  }
+
+  .second-section-paragraph {
+    width: 100%;
+  }
+  .second-section-paragraph p {
+    word-wrap: break-word;
+    overflow: scroll;
+  }
+
+/* OUR LATEST WORK */
+  .image-list-box li {
+    margin-left: 0px;
+    margin-top:0px;
+    text-align: center;
+    float: none;
+  }
+
+  .image-list-box li:nth-child(4) {
+    margin-top:80px;
+  }
+
+  .article-text-box > p {
+    width: 100%;
+    font-family: Lato;
+    opacity: 0.6;
+    line-height: 22px;
+}
+  .article-email{
+    margin-top: 20px;
+  }
+  .circlecluster li {
+    display:block;
+    margin-right: 0px;
+    margin-bottom: 80px;
+  }
+  .circlecluster li:last-child {
+    margin-bottom: 0px;
+  }
+  .section-social-logo {
+    padding: 50px 0;
+  }
+  .section-social-logo a {
+    width: calc( 100% - 15px );
+  }
+  .footer-box{
+    margin-rightß:10px;
+  }
+  .article-email{
+    font-size:16px;
+    padding:14px 25px;
+    margin-top: 30px;
+  }
+
+}
+  /* 600px〜959px：タブレット
+  ------------------------------ */
+  @media screen and (min-width:768px) and (max-width:1199px) {
+  /* メインコンテンツ */
+  .content{
+    width:97%;
+  }
+  
+  .iphone-text{
+    text-align: center;
+  }
+  .iphone-box img {
+    margin-left: 0px;
+  }
+  .second-section-paragraph {
+    margin-left: 0px;
+  }
+  .iphone-box {
+    margin-bottom: 20px;
+  }
+  .second-section-paragraph p {
+    margin-bottom: 25px;
+  }
+  .image-list-box li:first-child {
+    margin-left: 0px;
+  }
+
+  .image-list-box li {
+    margin-left: 0px;
+    margin-top: 0px;
+    float: none;
+  }
+
+  .image-list-box li:nth-child(4) {
+    margin-top: 80px;
+  }
+  .image-list-box {
+    margin-bottom: 80px;
+  }
+  .article-text-box > p {
+    margin-right: 0px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .article-email {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+  }
+  .circlecluster li {
+    margin-right: 0px;
+    display: block;
+    margin-bottom: 88px;
+  }
+  .circlecluster li:nth-child(4) {
+    margin-bottom: 0px;
+  }
+  .section-social-logo a {
+    width: 140px;
+  }
+
+}
+   
+  
+  
