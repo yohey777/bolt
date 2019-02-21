@@ -67,6 +67,7 @@ a.contact-box:hover  {
 .main-box {
   width:100%;
   padding-top:82px;
+  overflow: hidden;
 }
 
 /* ここからbolt theme */
@@ -102,7 +103,7 @@ a.contact-box:hover  {
 }
 
 .iphone-box{
-  display:inline-block;
+  display:block;
 }
 
 
@@ -192,7 +193,7 @@ ul{
   margin-left:0px;
 }
 
-.image-list-box li:nth-child(4) {
+.image-list-box li:nth-child(4n) {
   margin-left:0px;
 }
 .image-list-box li:nth-child(-n+3){
@@ -225,7 +226,7 @@ ul{
 }
 
 .article_text_box_responsive{
-  display: none !important; 
+  display: none ; 
 }
 
 
@@ -428,7 +429,7 @@ a.article-email:hover {
     float: none;
   }
 
-  .image-list-box li:nth-child(4) {
+  .image-list-box li:nth-child(4n) {
     margin-top:80px;
   }
 
@@ -456,7 +457,7 @@ a.article-email:hover {
     width: calc( 100% - 15px );
   }
   .footer-box{
-    margin-rightß:10px;
+    margin-right:10px;
   }
   .article-email{
     font-size:16px;
@@ -498,7 +499,7 @@ a.article-email:hover {
     float: none;
   }
 
-  .image-list-box li:nth-child(4) {
+  .image-list-box li:nth-child(4n) {
     margin-top: 80px;
   }
   .image-list-box {
@@ -520,7 +521,7 @@ a.article-email:hover {
     display: block;
     margin-bottom: 88px;
   }
-  .circlecluster li:nth-child(4) {
+  .circlecluster li:nth-child(4n) {
     margin-bottom: 0px;
   }
   .section-social-logo a {
