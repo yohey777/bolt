@@ -103,7 +103,7 @@ a.contact-box:hover  {
 }
 
 .iphone-box{
-  display:block;
+  display:inline-block;
 }
 
 
@@ -480,12 +480,15 @@ a.article-email:hover {
   .iphone-box img {
     margin-left: 0px;
   }
+
   .second-section-paragraph {
     margin-left: 0px;
   }
   .iphone-box {
+    display:block;
     margin-bottom: 20px;
   }
+
   .second-section-paragraph p {
     margin-bottom: 25px;
   }
