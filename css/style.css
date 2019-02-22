@@ -67,7 +67,6 @@ a.contact-box:hover  {
 .main-box {
   width:100%;
   padding-top:82px;
-  overflow: hidden;
 }
 
 /* ここからbolt theme */
@@ -100,6 +99,7 @@ a.contact-box:hover  {
   background-color: #74cfae; 
   position:relative;
   padding-top: 50px;
+  padding-bottom:25px;
 }
 
 .iphone-box{
@@ -193,7 +193,7 @@ ul{
   margin-left:0px;
 }
 
-.image-list-box li:nth-child(4n) {
+.image-list-box li:nth-child(3n+4) {
   margin-left:0px;
 }
 .image-list-box li:nth-child(-n+3){
@@ -219,7 +219,6 @@ ul{
 .article-text-box > p{
   display:inline-block;
   width: 440px;
-  margin-right: 90px;
   font-size:16px;
   vertical-align: top;
   text-align: center;
@@ -429,7 +428,7 @@ a.article-email:hover {
     float: none;
   }
 
-  .image-list-box li:nth-child(4n) {
+  .image-list-box li:nth-child(3n+4) {
     margin-top:80px;
   }
 
@@ -489,9 +488,7 @@ a.article-email:hover {
     margin-bottom: 20px;
   }
 
-  .second-section-paragraph p {
-    margin-bottom: 25px;
-  }
+
   .image-list-box li:first-child {
     margin-left: 0px;
   }
@@ -502,7 +499,8 @@ a.article-email:hover {
     float: none;
   }
 
-  .image-list-box li:nth-child(4n) {
+  .image-list-box li:nth-child(3n+4
+  ) {
     margin-top: 80px;
   }
   .image-list-box {
@@ -524,7 +522,7 @@ a.article-email:hover {
     display: block;
     margin-bottom: 88px;
   }
-  .circlecluster li:nth-child(4n) {
+  .circlecluster li:last-child{
     margin-bottom: 0px;
   }
   .section-social-logo a {
